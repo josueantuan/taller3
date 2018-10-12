@@ -1,0 +1,16 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Zona Marcada</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="15">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        <agm-circle [latitude]="lat"[longitude]="lng"[circleDraggable]="false" [editable]="false" [fillColor]="blue" [radius]="1000">
+        </agm-circle>
+    </agm-map>
+</ion-content>

@@ -1,0 +1,16 @@
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Direccion</ion-title>
+  </ion-navbar> 
+
+</ion-header>
+
+
+<ion-content >
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="15">
+        <agm-direction [origin]="origin" [destination]="destination">
+        </agm-direction>
+      </agm-map>
+</ion-content>
